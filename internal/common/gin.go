@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"easygo/internal/middleware"
 	"easygo/internal/router"
 	"github.com/gin-gonic/gin"

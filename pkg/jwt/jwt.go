@@ -1,7 +1,7 @@
 package jwt
 
 import (
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"easygo/pkg/wrapper"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/go-redis/redis"

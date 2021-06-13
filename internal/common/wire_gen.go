@@ -6,10 +6,10 @@
 package internal
 
 import (
-	"easygo/internal/controller"
-	"easygo/internal/dao"
-	"easygo/internal/model"
-	"easygo/internal/router"
+	controller2 "easygo/internal/controller"
+	dao2 "easygo/internal/dao"
+	model2 "easygo/internal/model"
+	router2 "easygo/internal/router"
 	"easygo/pkg/jwt"
 )
 
@@ -20,7 +20,7 @@ func BuildInjector() (*Injector, func(), error) {
 	if err != nil {
 		return nil, nil, err
 	}
-	userDao := &dao.UserDao{
+	userDao := &dao2.UserDao{
 		DB: db,
 	}
 	client, err := InitRedis()
@@ -30,17 +30,17 @@ func BuildInjector() (*Injector, func(), error) {
 	jwtJwt := &jwt.Jwt{
 		Redis: client,
 	}
-	userModel := &model.UserModel{
+	userModel := &model2.UserModel{
 		UserDao: userDao,
 		Jwt:     jwtJwt,
 	}
-	user := &controller.User{
+	user := &controller2.User{
 		UserModel: userModel,
 	}
-	test := &controller.Test{
+	test := &controller2.Test{
 		RedisTest: client,
 	}
-	routerRouter := &router.Router{
+	routerRouter := &router2.Router{
 		UserAPI: user,
 		TestAPI: test,
 		Jwt:     jwtJwt,

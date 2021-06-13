@@ -3,7 +3,7 @@ package middleware
 import (
 	"time"
 
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )

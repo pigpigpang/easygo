@@ -4,7 +4,7 @@ import (
 	"easygo/internal/entity"
 	"time"
 
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

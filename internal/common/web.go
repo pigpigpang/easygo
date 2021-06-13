@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"easygo/pkg/logger"
 )
 

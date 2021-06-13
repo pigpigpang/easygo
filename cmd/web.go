@@ -2,14 +2,14 @@ package main
 
 import (
 	"context"
-	"easygo/internal"
+	internal "easygo/internal/common"
 	"easygo/pkg/logger"
 	"github.com/urfave/cli/v2"
 	"os"
 )
 
 // VERSION 版本号
-var VERSION = "0.0.2"
+var VERSION = "0.0.3"
 
 func main() {
 	logger.SetVersion(VERSION)

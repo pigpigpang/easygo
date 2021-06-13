@@ -18,9 +18,9 @@ func InitConfig(mode string) {
 
 		path := ""
 		if mode == "dev" {
-			path = "application_dev.yml"
+			path = "./config/application_dev.yml"
 		} else {
-			path = "application.yml"
+			path = "./config/application.yml"
 		}
 
 		file, err := ioutil.ReadFile(path)

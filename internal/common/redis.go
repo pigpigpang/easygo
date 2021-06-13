@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"github.com/go-redis/redis"
 	"strconv"
 )

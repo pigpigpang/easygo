@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"easygo/pkg/wrapper"
 	"github.com/gin-gonic/gin"
 )

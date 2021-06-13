@@ -2,7 +2,7 @@ package internal
 
 import (
 	"context"
-	"easygo/internal/config"
+	"easygo/internal/common/config"
 	"easygo/pkg/logger"
 	"os"
 	"os/signal"

@@ -1,8 +1,6 @@
 # easygo
 
-
-
-**简易的 开源的 面向开发的 go脚手架**
+**简易的 开源的 面向开发的 go单应用web脚手架**
 
 
 
@@ -16,11 +14,7 @@
 
 **gorm**做数据库映射
 
-
-
 配置文件采用**yaml文件**读取
-
-
 
 配置文件集成了redis、jwt、mysql等常用功能
 
@@ -42,26 +36,25 @@ model层和dao层交互通过dao层定义struct交互
 
 目录结构
 
-
-├─cmd &nbsp;&nbsp;&nbsp;  //文件的启动目录 <br>
-├─internal      // 对内函数 <br>
-│  ├─config      
-│  ├─controller  
-│  ├─dao  
-│  ├─entity  
-│  ├─middleware  
-│  ├─model  
-│  ├─router  
-│  └─schema  
+├─cmd &nbsp;&nbsp;&nbsp; //文件的启动目录 <br>
+├─internal // 对内函数 <br>
+│ ├─config      
+│ ├─controller  
+│ ├─dao  
+│ ├─entity  
+│ ├─middleware  
+│ ├─model  
+│ ├─router  
+│ └─schema  
 ├─log  
-└─pkg  //代码仓库 ，可引用 复用  <br>
+└─pkg //代码仓库 ，可引用 复用  <br>
 &nbsp;&nbsp;&nbsp;├─cryptox  
 &nbsp;&nbsp;&nbsp;├─jwt  
 &nbsp;&nbsp;&nbsp;├─logger  
 &nbsp;&nbsp;&nbsp;├─redis  
 &nbsp;&nbsp;&nbsp;├─request  
 &nbsp;&nbsp;&nbsp;├─trace   
-&nbsp;&nbsp;&nbsp;└─wrapper  
+&nbsp;&nbsp;&nbsp;└─wrapper
 
 
 ---
@@ -71,7 +64,6 @@ v0.0.1在工作室开源发布<br>
 [0.0.1](http://gitlab.qnxg.net/qgo) <br>
 [MIT](http://gitlab.qnxg.net/qgo/qgo/-/blob/master/LICENSE)
 
-
 v0.0.2<br>
 
 - 增加了redis和jwt的默认支持
@@ -79,6 +71,7 @@ v0.0.2<br>
 - 增加测试层
 
 ---
+
 ### 预告
 
 - 完善测试层，规范代码结构

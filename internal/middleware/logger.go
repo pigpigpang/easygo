@@ -1,11 +1,11 @@
 package middleware
 
 import (
+	"easygo/internal/common/config"
 	"mime"
 	"net/http"
 	"time"
 
-	"easygo/internal/config"
 	"easygo/pkg/logger"
 	"easygo/pkg/wrapper"
 	"github.com/gin-gonic/gin"
