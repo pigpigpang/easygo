@@ -2,7 +2,8 @@
 
 **简易的 开源的 面向开发的 go单应用web脚手架**
 
-
+[github](https://github.com/pigpigpang/easygo) 
+[gitee](https://gitee.com/shawjay/easygo)
 
 ---
 
